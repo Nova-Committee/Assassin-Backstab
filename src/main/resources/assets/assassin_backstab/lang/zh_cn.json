@@ -1,0 +1,12 @@
+{
+    "group.assassin_backstab": "暗杀者:背刺",
+    "item.assassin_backstab.wood_dagger": "[木]匕首",
+    "item.assassin_backstab.stone_dagger": "[石]匕首",
+    "item.assassin_backstab.iron_dagger": "[铁]匕首",
+    "item.assassin_backstab.gold_dagger": "[金]匕首",
+    "item.assassin_backstab.diamond_dagger": "[钻]匕首",
+    "item.assassin_backstab.netherite_dagger": "[合金]匕首",
+
+    "death.attack.backstab": "%1$s 被 %2$s 暗杀了！",
+    "death.attack.backstab.item": "%1$s 被 %2$s 使用 %3$s 暗杀了！"
+}

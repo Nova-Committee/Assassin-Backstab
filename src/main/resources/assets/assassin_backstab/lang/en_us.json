@@ -1,0 +1,12 @@
+{
+    "group.assassin_backstab": "Assassin:backstab",
+    "item.assassin_backstab.wood_dagger": "Wooden Dagger",
+    "item.assassin_backstab.stone_dagger": "Stone Dagger",
+    "item.assassin_backstab.iron_dagger": "Iron Dagger",
+    "item.assassin_backstab.gold_dagger": "Golden Dagger",
+    "item.assassin_backstab.diamond_dagger": "Diamond Dagger",
+    "item.assassin_backstab.netherite_dagger": "Netherite Dagger",
+
+    "death.attack.backstab": "%1$s was assassinated by %2$s",
+    "death.attack.backstab.item": "%1$s was assassinated by %2$s using %3$s"
+}
