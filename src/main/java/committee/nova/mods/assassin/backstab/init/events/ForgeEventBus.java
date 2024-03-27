@@ -45,7 +45,7 @@ public class ForgeEventBus {
                 if (targetYaw < 0) targetYaw += 360;//正值
                 if(Math.abs(targetYaw - attackerYaw) < ModConfig.backstabDegrees || 360 - Math.abs(targetYaw - attackerYaw) < ModConfig.backstabDegrees) {
                     float oldAmount = event.getAmount();
-                    player.sendSystemMessage(Component.literal("原伤害" + oldAmount));
+                    //player.sendSystemMessage(Component.literal("原伤害" + oldAmount));
                     Double[] data = ModConfig.itemsData.get(ForgeRegistries.ITEMS.getKey(player.getMainHandItem().getItem()).toString());
                     if (data == null) data = new Double[]{ModConfig.backstabMultiplier, ModConfig.backstabBonus};
                     if (chargedAttack) {
@@ -56,7 +56,7 @@ public class ForgeEventBus {
                     event.setCanceled(true);
                     // 添加 oldAmount，因为取消会减去之前的伤害
                     event.getEntity().hurt(ModDamageTypes.causeDamage(player), event.getAmount() + oldAmount);
-                    player.sendSystemMessage(Component.literal("新伤害" + event.getAmount() + oldAmount));
+                    //player.sendSystemMessage(Component.literal("新伤害" + event.getAmount() + oldAmount));
                     player.playNotifySound(getRegisteredSoundEvent(ModConfig.backstabSound), SoundSource.PLAYERS, (float) ModConfig.backstabVolume, (float) ModConfig.backstabPitch);
                 }
             }

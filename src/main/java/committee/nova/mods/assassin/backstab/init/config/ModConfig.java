@@ -53,7 +53,6 @@ public class ModConfig {
 		public Main(ForgeConfigSpec.Builder builder){
 			builder.push("general");
 			specBonus = builder
-					.push(GENERAL)
 					.comment(bonusString)
 					.translation(Const.MOD_ID + ".config.bonus")
 					.defineInRange("bonus", 0.0, 0.0, 1000.0);
